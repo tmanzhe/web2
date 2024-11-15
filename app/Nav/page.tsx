@@ -7,21 +7,33 @@ const Page = () => {
             <ul className="flex items-center justify-between text-2xl space-x-5">
                 {/* Left-Aligned Text */}
                 <li className="text-4xl font-semibold">
-                    <Link href="/">tman</Link>
+                    <Link href="/" className="hover:text-gray-700 transition duration-300 ease-in-out">
+                        tman
+                    </Link>
                 </li>
 
                 {/* Right-Aligned Links */}
                 <div className="flex space-x-5">
                     <li>
-                        <Link href="/AboutMe">about me</Link>
+                        <Link
+                            href="/AboutMe"
+                            className="hover:text-gray-700 transition duration-300 ease-in-out"
+                        >
+                            about me
+                        </Link>
                     </li>
                     <li>
-                        <Link href="/Experience">experience</Link>
+                        <Link
+                            href="/Experience"
+                            className="hover:text-gray-700 transition duration-300 ease-in-out"
+                        >
+                            experience
+                        </Link>
                     </li>
                     <li>
                         <a
                             href="mailto:trumanzhe@gmail.com?subject=Hello%20Truman&body=I%20would%20like%20to%20get%20in%20touch."
-                            className="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition duration-300 ease-in-out"
+                            className="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 hover:scale-105 transition-transform duration-300 ease-in-out"
                         >
                             contact me
                         </a>

@@ -1,19 +1,33 @@
-import React from 'react'
-import { FaLinkedin } from 'react-icons/fa'; // Import the LinkedIn icon from React Icons
-import { FaGithub } from 'react-icons/fa';
+import React from 'react';
+import { FaLinkedin, FaGithub } from 'react-icons/fa'; // Import icons
 
 const Page = () => {
     return (
-        <div className = "my-2">
-            <ul className= "flex space-x-2">
-                <a href="https://www.linkedin.com/in/trumanchan" target="_blank" rel="noopener noreferrer">
-                    <FaLinkedin size={35} />
-                </a>
-                <a href="https://github.com/tmanzhe" target="_blank" rel="noopener noreferrer">
-                        <FaGithub size = {35}/>
+        <div className="my-2">
+            <ul className="flex space-x-4">
+                <li>
+                    <a
+                        href="https://www.linkedin.com/in/trumanchan"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-600 hover:text-blue-500 transition duration-300 ease-in-out"
+                    >
+                        <FaLinkedin size={35} />
                     </a>
-                </ul>
+                </li>
+                <li>
+                    <a
+                        href="https://github.com/tmanzhe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-600 hover:text-gray-800 transition duration-300 ease-in-out"
+                    >
+                        <FaGithub size={35} />
+                    </a>
+                </li>
+            </ul>
         </div>
-    )
-}
-export default Page
+    );
+};
+
+export default Page;

@@ -29,3 +29,7 @@ body {
   background: var(--background);
   font-family: "CenturyOldStyleStd", Arial, Helvetica, sans-serif;
 }
+
+body {
+  cursor: url("../public/assets/woodstockresized.png"), auto;
+}

@@ -1,11 +1,11 @@
 import Image from "next/image";
-import snoopyImage from "./assets/snoopy.png";
+import snoopyImage from "@/public/assets/snoopy.png";
 
 export default function Home() {
     return (
         <main className="flex items-center justify-center min-h-[85vh]">
             {/* Two-column layout: one for text and one for the image */}
-            <div className="flex items-start space-x-10 ml-10">
+            <div className="flex items-start space-x-10 ml-10 animate-fadeIn"  style={{ animationDelay: '0.5s' }}>
                 {/* Text Column */}
                 <div className="flex flex-col mt-28">
                     <h1 className="text-8xl">

@@ -1,11 +1,23 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import snoopyImage from "@/public/assets/snoopy.png";
 
 export default function Home() {
+    const [loaded, setLoaded] = useState(false);
+
+    // Set loaded to true after the component mounts
+    useEffect(() => {
+        setLoaded(true);
+    }, []);
+
     return (
         <main className="flex items-center justify-center min-h-[85vh]">
-            {/* Two-column layout: one for text and one for the image */}
-            <div className="flex items-start space-x-10 ml-10 animate-fadeIn"  style={{ animationDelay: '0.5s' }}>
+            <div
+                className={`flex items-start space-x-10 ml-10 ${loaded ? "animate-fadeIn" : ""}`}
+                style={{ animationDelay: '0.5s' }}
+            >
                 {/* Text Column */}
                 <div className="flex flex-col mt-28">
                     <h1 className="text-8xl">

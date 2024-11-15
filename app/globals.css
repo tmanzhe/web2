@@ -3,19 +3,29 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f7f4ed;
+  --foreground: #191919;
+  --font-century-old-style: "CenturyOldStyleStd", Arial, Helvetica, sans-serif;
+  --font-sebino-regular: "SebinoRegular", Arial, Helvetica, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
 }
 
+@font-face {
+  font-family: "CenturyOldStyleStd";
+  src: url("fonts/CenturyATFOldStyleBQ-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "CenturyOldStyleStd", Arial, Helvetica, sans-serif;
 }

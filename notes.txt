@@ -1,0 +1,12 @@
+colour scheme:
+
+light khaki
+rgba(247,244,237,255)
+#f7f4ed
+
+black:
+rgba(25,25,25,255)
+#191919
+
+font:
+Century Old Style Std Regular

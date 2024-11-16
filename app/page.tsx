@@ -12,10 +12,14 @@ export default function Home() {
     }, []);
 
     return (
-        <main className="flex items-center justify-center min-h-[85vh] p-5">
+        <main
+            className={`flex items-center justify-center min-h-[85vh] p-5 transition-opacity duration-1000 ${
+                loaded ? "opacity-100" : "opacity-0"
+            }`}
+        >
             <div
-                className={`flex flex-wrap items-start space-x-10 ml-10 ${loaded ? "animate-fadeIn" : ""}`}
-                style={{ animationDelay: '0.5s' }}
+                className="flex flex-wrap items-start space-x-10 ml-10"
+                style={{ animationDelay: "0.5s" }}
             >
                 {/* Text Column */}
                 <div className="flex flex-col mt-10 sm:mt-28 text-center sm:text-left">

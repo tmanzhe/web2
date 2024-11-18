@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const Page = () => {
     const [loaded, setLoaded] = useState(false);
-    const [selectedImage, setSelectedImage] = useState(null); // State for enlarged image
+    const [selectedImage, setSelectedImage] = useState<string | null>(null); // Allow string or null
 
     useEffect(() => {
         setLoaded(true);
@@ -57,14 +57,11 @@ const Page = () => {
     ];
 
     return (
-        <div className="w-full max-w-6xl mx-auto p-5">
-            {/* Spacing between navigation bar */}
-            <div className="mt-16" />
-
+        <div className="w-full max-w-6xl mx-auto p-5 mt-16">
             {/* Gallery Title */}
             <h2
                 className={`text-4xl sm:text-5xl font-bold mb-12 text-center transition-opacity duration-1000 ${
-                    loaded ? 'opacity-100' : 'opacity-0'
+                    loaded ? "opacity-100" : "opacity-0"
                 }`}
             >
                 my gallery
@@ -73,13 +70,13 @@ const Page = () => {
             {/* Gallery Grid */}
             <div
                 className={`grid grid-cols-3 gap-10 transition-opacity duration-1000 ${
-                    loaded ? 'opacity-100' : 'opacity-0'
+                    loaded ? "opacity-100" : "opacity-0"
                 }`}
             >
                 {images.map((src, index) => (
                     <div
                         key={index}
-                        className={`shadow-lg rounded-lg overflow-hidden flex justify-center items-center aspect-[4/5] border-2 border-gray-200 hover:border-gray-400 transform transition-transform duration-500 hover:scale-105 cursor-pointer`}
+                        className="shadow-lg rounded-lg overflow-hidden flex justify-center items-center aspect-[4/5] border-2 border-gray-200 hover:border-gray-400 transform transition-transform duration-500 hover:scale-105 cursor-pointer"
                         onClick={() => setSelectedImage(src)} // Click handler to enlarge image
                     >
                         <Image
@@ -106,8 +103,8 @@ const Page = () => {
                         <Image
                             src={selectedImage}
                             alt="Enlarged"
-                            width={600} // Adjusted smaller size
-                            height={800} // Adjusted height
+                            width={600}
+                            height={800}
                             className="object-contain w-full h-full rounded-lg"
                         />
                         <button
@@ -119,9 +116,6 @@ const Page = () => {
                     </div>
                 </div>
             )}
-
-            {/* Spacing before footer */}
-            <div className="mt-16" />
         </div>
     );
 };

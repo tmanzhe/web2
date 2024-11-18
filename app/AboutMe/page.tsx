@@ -48,8 +48,8 @@ export default function Page() {
                 {/* Image Column */}
                 <div className="flex sm:w-[350px] md:w-[550px] w-full p-5 shadow-lg rounded-lg">
                     <Image
-                        src="/assets/idk.png"
-                        alt="Illustration"
+                        src="/converted/swag.jpg"
+                        alt="joe cool"
                         layout="responsive"
                         width={3}
                         height={4}
@@ -64,7 +64,7 @@ export default function Page() {
                 <div className="flex sm:w-[350px] md:w-[550px] w-full p-5 shadow-lg rounded-lg">
                     <Image
                         src="/assets/me.png"
-                        alt="Journey Illustration"
+                        alt="me nd pancake"
                         layout="responsive"
                         width={3}
                         height={4}
@@ -83,8 +83,7 @@ export default function Page() {
                     </p>
                     <p className="text-sm sm:text-lg">
                         i love exploring different cultures, especially through their food—there’s nothing like the
-                        thrill of trying bold, exotic flavors. discovering new places, whether it’s a quiet trail or a
-                        bustling city street, is a constant adventure.
+                        thrill of trying bold, exotic flavors. hether it’s wandering along a peaceful trail or navigating the buzz of a bustling city, discovering new things always feels like an exciting adventure.
                     </p>
                     <p className="text-sm sm:text-lg">
                         and when i'm trapped in my room, i enjoy producing and editing videos. maybe in another life,

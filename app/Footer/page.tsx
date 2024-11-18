@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin, FaGithub } from 'react-icons/fa'; // Import icons
+import { FaLinkedin, FaGithub, FaRegFileAlt } from 'react-icons/fa'; // Import icons including the document icon
 
 const Page = () => {
     return (
@@ -23,6 +23,16 @@ const Page = () => {
                         className="text-gray-600 hover:text-gray-800 transition duration-300 ease-in-out"
                     >
                         <FaGithub size={35} />
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://drive.google.com/file/d/1F1jqGPXQrCR7v_4BTHEOIYdAw5Dufs7R/view"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-600 hover:text-gray-300 transition duration-300 ease-in-out"
+                    >
+                        <FaRegFileAlt size={35} />
                     </a>
                 </li>
             </ul>

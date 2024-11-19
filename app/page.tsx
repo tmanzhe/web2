@@ -26,7 +26,7 @@ export default function Home() {
                     <h1 className="text-4xl sm:text-6xl md:text-8xl">
                         <span>Hello,</span>
                         <br />
-                        <span>I'm Truman</span>
+                        <span>I&apos;m Truman</span>
                     </h1>
                     <p className="mt-3 sm:mt-5 text-sm sm:text-lg max-w-lg">
                         A second-year student pursuing a double degree at York for CS and MMGT at Schulich

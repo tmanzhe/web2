@@ -99,9 +99,9 @@ const Page: React.FC = () => {
                     <h2 className="text-4xl sm:text-5xl font-bold">experience</h2>
                     <div className="flex flex-col items-start gap-6 p-8 transition-shadow duration-300 mx-auto max-w-xl border border-gray-400 shadow-md rounded-lg">
                         <h3 className="text-2xl font-bold">Mobile Dev Intern @ ITMZ</h3>
-                        <p className="text-sm text-gray-600">June 2024 - Present</p>
+                        <p className="text-sm text-gray-600">June 2024 - Dec 2024</p>
                         <p className="text-lg mt-2 leading-relaxed text-gray-800">
-                            currently building some really cool stuff at{" "}
+                            previously building some really cool stuff at{" "}
                             <a
                                 href="https://www.itmz.app/"
                                 target="_blank"

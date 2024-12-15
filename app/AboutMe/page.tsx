@@ -39,7 +39,7 @@ export default function Page() {
                         became the perfect reason for me to keep creating.
                         <br />
                         <br />
-                        currently,  i mworking towards becoming a seasoned full-stack developer. while i enjoy the
+                        im currently working towards becoming a seasoned full-stack developer. while i enjoy the
                         technical challenges of backend development, theres something really satisfying about combining
                         it and seeing it brought to life on the frontend as well.
                     </p>
@@ -83,11 +83,11 @@ export default function Page() {
                     </p>
                     <p className="text-sm sm:text-lg">
                         i love exploring different cultures, especially through their food—there’s nothing like the
-                        thrill of trying bold, exotic flavors. hether it’s wandering along a peaceful trail or navigating the buzz of a bustling city, discovering new things always feels like an exciting adventure.
+                        thrill of trying bold, exotic flavors. whether it’s wandering along a peaceful trail or navigating the buzz of a bustling city, discovering new things always feels like an exciting adventure.
                     </p>
                     <p className="text-sm sm:text-lg">
-                        and when im trapped in my room, i enjoy producing and editing videos. maybe in another life,
-                        i’d be a full-time video producer.
+                        and when im trapped in my room, i enjoy producing and editing videos. who knows, maybe
+                        i might start taking it more seriously in the future.
                     </p>
                 </div>
             </div>

@@ -24,31 +24,28 @@ export default function Page() {
                 {/* Text Column */}
                 <div className="flex flex-col mt-10 sm:mt-28 text-center sm:text-left max-w-lg">
                     <h1 className="text-3xl sm:text-5xl md:text-7xl">
-                        <span>my inspiration</span>
+                        <span>hello again lol </span>
                     </h1>
                     <br />
                     <p className="mt-3 sm:mt-5 text-sm sm:text-lg">
-                        my journey into computer science began with discovering minecraft.
-                        <br />
-                        <br />
-                        as a kid, the game sparked my curiosity and challenged me to bring my ideas to life—from massive
-                        flying machines to functional in-game tvs.
-                        <br />
-                        <br />
-                        over the years, this passion for building and problem-solving has grown, and computer science
-                        became the perfect reason for me to keep creating.
-                        <br />
-                        <br />
-                        im currently working towards becoming a seasoned full-stack developer. while i enjoy the
+                        im currently working towards becoming a seasoned full-stack developer.                         <br/>
+                        <br/>
+                        while i enjoy the
                         technical challenges of backend development, theres something really satisfying about combining
-                        it and seeing it brought to life on the frontend as well.
+                        it and seeing it brought to life on the frontend as well. however, i do admit that it can get annoying.
+                        <br/> 
+                        <br/> 
+                        im currently trying to perfect my blender and three.js. i plan on making web dev cooler, and i also plan on doing some cool jarvis ar assistant project in the future with this. 
+                        <br/> 
+                        <br/> 
+                        
                     </p>
                 </div>
 
                 {/* Image Column */}
                 <div className="flex sm:w-[350px] md:w-[550px] w-full p-5 shadow-lg rounded-lg">
                     <Image
-                        src="/converted/swag.jpg"
+                        src="/assets/me.png"
                         alt="joe cool"
                         layout="responsive"
                         width={3}
@@ -63,7 +60,7 @@ export default function Page() {
                 {/* Image Column */}
                 <div className="flex sm:w-[350px] md:w-[550px] w-full p-5 shadow-lg rounded-lg">
                     <Image
-                        src="/assets/me.png"
+                        src="/assets/me2.webp"
                         alt="me nd pancake"
                         layout="responsive"
                         width={3}
@@ -76,18 +73,16 @@ export default function Page() {
                     <h2 className="text-2xl sm:text-4xl font-bold">a little more about me...</h2>
                     <br />
                     <p className="text-sm sm:text-lg">
-                        outside the world of numbers, i like venturing and discovering new experiences.
-                    </p>
-                    <p className="text-sm sm:text-lg">
+                        all you really need to know is that i like having fun 
+                        <br/>
+                        <br/>
                         my three wonders of life are food, nature, and travelling.
                     </p>
                     <p className="text-sm sm:text-lg">
-                        i love exploring different cultures, especially through their food—there’s nothing like the
-                        thrill of trying bold, exotic flavors. whether it’s wandering along a peaceful trail or navigating the buzz of a bustling city, discovering new things always feels like an exciting adventure.
+                        b/c of my three wonders of life, i love to travel. theres a whole lot of foods that i want to try that doesnt exist here in toronto. and dont even get me started on sceneries other countries have to offer. my gallery is a good reflection of this
                     </p>
                     <p className="text-sm sm:text-lg">
-                        and when im trapped in my room, i enjoy producing and editing videos. who knows, maybe
-                        i might start taking it more seriously in the future.
+                        something more interesting is that i started getting into video production. i just like making videos of my friends and i to look back on.
                     </p>
                 </div>
             </div>

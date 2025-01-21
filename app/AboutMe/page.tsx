@@ -41,7 +41,7 @@ export default function Page() {
                         <br />
                     </div>
                     <h2 className="text-3xl sm:text-3xl">
-                        what i'm currently learning: 
+                        what i&apos;m currently learning: 
                     </h2>
                     <br />
                     springboot, three.js + blender for my prod app!

@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
@@ -26,19 +26,28 @@ export default function Page() {
                     <h1 className="text-3xl sm:text-5xl md:text-7xl">
                         <span>hello again lol </span>
                     </h1>
-                    <br />
                     <p className="mt-3 sm:mt-5 text-sm sm:text-lg">
-                        im currently working towards becoming a seasoned full-stack developer.                         <br/>
-                        <br/>
-                        while i enjoy the
-                        technical challenges of backend development, theres something really satisfying about combining
-                        it and seeing it brought to life on the frontend as well. however, i do admit that it can get annoying.
-                        <br/> 
-                        <br/> 
-                        im currently trying to perfect my blender and three.js. i plan on making web dev cooler, and i also plan on doing some cool jarvis ar assistant project in the future with this. 
-                        <br/> 
-                        <br/> 
-                        
+                        im currently a full stack dev building as many projects as i can!  
+                        <br />
+                        <br />
+                        i love bringing my impusive thoughts to life. 
+                        <br />
+                        <br />
+                        most importantly, i learn so much from each project.
+                        <br />
+                        <br />
+                        check out my some of my work!
+                        <br /> 
+                        <br />
+                        <h2 className="text-3xl sm:text-3xl">
+                            what i'm currently learning: 
+                        </h2>
+                        <br />
+                        springboot, three.js + blender for my prod app!
+                        <br />
+                        blockchains and crypto: currently building my own <a href='https://github.com/tmanzhe/luhchain' target='_blank' rel='noopener noreferrer' className='text-blue-600 hover:underline'> coin!</a>
+                        <br />
+                        <br /> 
                     </p>
                 </div>
 
@@ -71,11 +80,10 @@ export default function Page() {
                 {/* Text Column */}
                 <div className="flex flex-col text-center sm:text-left max-w-lg space-y-4">
                     <h2 className="text-2xl sm:text-4xl font-bold">a little more about me...</h2>
-                    <br />
                     <p className="text-sm sm:text-lg">
                         all you really need to know is that i like having fun 
-                        <br/>
-                        <br/>
+                        <br />
+                        <br />
                         my three wonders of life are food, nature, and travelling.
                     </p>
                     <p className="text-sm sm:text-lg">

@@ -13,20 +13,36 @@ interface Project {
 
 const projects: Project[] = [
     {
-        title: "Self-Driving Car Simulation",
+        title: "MockMate",
         description:
-            "Inspired by humanless taxis in Shenzhen, I followed a tutorial and tinkered my way to building a simulation in JavaScript with driving physics and neural networks. It still has a long way to go, but I'm pretty proud of this.",
-        technologies: ["JavaScript", "HTML", "CSS"],
-        images: ["/demo/drive-1.png", "/demo/drive-2.png"],
-        date: "May 2024 - Present",
+            "Developed MockMate during UofTHacks 12. MockMate is an AI-assisted application to help users prepare for interviews by simulating real-time scenarios, providing feedback, and tracking progress. Integrated voice recognition and interactive chat features with real-time analytic feedback. Check it out <a href='https://github.com/tmanzhe/mockmate?tab=readme-ov-file' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'> here!</a>",
+        technologies: ["Next.js", "Next Auth", "PostgreSQL", "OpenAI API", "AWS RDS", "Prisma", "Tailwind"],
+        images: ["/demo/mockmatedemo1.png", "/demo/mockmatedemo2.png","/demo/mockmatedemo3.png"],
+        date: "January 2025",
     },
     {
         title: "Virtual Mouse",
         description:
-            "Using Python, OpenCV, and MediaPipe, I built a simple gesture-based mouse control system. It was a lot of trial and error, but it works (mostly). Definitely learned a lot in the process. In the future, I'm planning to implement this in 3D environments.",
+            "Using Python, OpenCV, and MediaPipe, I built a simple gesture-based mouse control system. It was a lot of trial and error, but it works (mostly). Definitely learned a lot in the process. In the future, I'm planning to implement this in 3D environments. Check out my <a href='https://github.com/tmanzhe/virtual_mouse' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'>GitHub repo</a>.",
         technologies: ["Python", "OpenCV", "MediaPipe"],
         images: ["/demo/virtual-mouse.png", "/demo/clicker.png"],
         date: "April 2024 - Present",
+    },
+    {
+        title: "Idkstudy",
+        description:
+            "Currently developing an all-in-one productivity application featuring a calendar, to-do list, and timer tracker. Built with Next.js and styled using Tailwind CSS, the app integrates 3D interactive elements with Three.js for an engaging user experience. MongoDB and Prisma ORM power secure and efficient backend data management. Check it out <a href='https://github.com/tmanzhe/idkstudy' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'> here</a>.",
+        technologies: ["Next.js", "MongoDB", "Prisma", "Three.js", "Tailwind"],
+        images: ["/assets/underconstruction.jpg"],
+        date: "January 2025 - Present",
+    },
+    {
+        title: "Self-Driving Car Simulation",
+        description:
+            "Honestly, I saw a four hour long tutorial and youtube followed it. Tinkered my way to building a simulation in JavaScript with driving physics and neural networks. It was pretty fun.",
+        technologies: ["JavaScript", "HTML", "CSS"],
+        images: ["/demo/drive-1.png", "/demo/drive-2.png"],
+        date: "May 2024 - Present",
     },
     {
         title: "Personal Website",
@@ -79,6 +95,18 @@ const Page: React.FC = () => {
         }
     };
 
+    const HTMLContent: React.FC<{ content: string }> = ({ content }) => {
+        // Replace invalid HTML nesting (e.g., <h2> inside <p>)
+        const sanitizedContent = content
+            .replace(/<p><h2>/g, '<div><h2>') // Replace <p><h2> with <div><h2>
+            .replace(/<\/h2><\/p>/g, '</h2></div>') // Replace </h2></p> with </h2></div>
+            .replace(/<p><h1>/g, '<div><h1>') // Replace <p><h1> with <div><h1>
+            .replace(/<\/h1><\/p>/g, '</h1></div>'); // Replace </h1></p> with </h1></div>
+    
+        return <div dangerouslySetInnerHTML={{ __html: sanitizedContent }} />;
+    };
+    
+
     return (
         <div
             className="min-h-screen w-full"
@@ -126,9 +154,11 @@ const Page: React.FC = () => {
                                 style={{
                                     transition: "transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out",
                                 }}
-                                onClick={() => openModal(project.images, 0)}
                             >
-                                <div className="w-full h-[300px] relative overflow-hidden rounded-lg cursor-pointer">
+                                <div 
+                                    className="w-full h-[300px] relative overflow-hidden rounded-lg cursor-pointer"
+                                    onClick={() => openModal(project.images, 0)}
+                                >
                                     <Image
                                         src={project.images[0]}
                                         alt={project.title}
@@ -139,7 +169,9 @@ const Page: React.FC = () => {
                                 </div>
                                 <h3 className="text-2xl font-bold mt-4">{project.title}</h3>
                                 <p className="text-sm text-gray-600">{project.date}</p>
-                                <p className="text-base mt-2 text-gray-700">{project.description}</p>
+                                <div className="text-base mt-2 text-gray-700 text-left">
+                                    <HTMLContent content={project.description} />
+                                </div>
                                 <div className="flex flex-wrap justify-center mt-4 gap-3">
                                     {project.technologies.map((tech, idx) => (
                                         <span
@@ -152,6 +184,18 @@ const Page: React.FC = () => {
                                 </div>
                             </div>
                         ))}
+                    </div>
+                </section>
+
+                {/* Resume Section */}
+                <section className="space-y-12 text-center mt-20">
+                    <h2 className="text-4xl sm:text-5xl font-bold mb-12">resume</h2>
+                    <div className="w-full aspect-[8.5/11] max-w-4xl mx-auto border border-gray-400 shadow-lg rounded-lg overflow-hidden">
+                        <iframe
+                            src="https://drive.google.com/file/d/1qrRhlm1Ac_gTKKz0OW54jMTAnz8Df47X/preview"
+                            className="w-full h-full"
+                            allow="autoplay"
+                        ></iframe>
                     </div>
                 </section>
             </main>

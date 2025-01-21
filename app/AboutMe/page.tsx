@@ -85,13 +85,20 @@ export default function Page() {
                         all you really need to know is that i like having fun 
                         <br />
                         <br />
-                        my three wonders of life are food, nature, and travelling.
+                        my three wonders of life are food, nature, and travelling. i literally cannot live without any of these. check out my gallery for more!
                     </p>
                     <p className="text-sm sm:text-lg">
-                        b/c of my three wonders of life, i love to travel. theres a whole lot of foods that i want to try that doesnt exist here in toronto. and dont even get me started on sceneries other countries have to offer. my gallery is a good reflection of this
+                        some of my hobbies include video prod, gym and some light video gaming
                     </p>
                     <p className="text-sm sm:text-lg">
-                        something more interesting is that i started getting into video production. i just like making videos of my friends and i to look back on.
+                        here are some interesting facts about me: 
+                        <br/>
+                        <br/>
+                        - i played the piano, trumpet and violin
+                        <br/>
+                        - i represented team canada in an internation kf comp event in china 
+                        <br/>
+                        - i cook 
                     </p>
                 </div>
             </div>

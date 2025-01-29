@@ -36,20 +36,19 @@ export default function Page() {
                         most importantly, i learn so much from each project.
                         <br />
                         <br />
-                        check out my some of my work!
-                        <br /> 
-                        <br />
                     </div>
                     <h2 className="text-3xl sm:text-3xl">
-                        what i&apos;m currently learning: 
+                        here&apos;s what i&apos;m currently doing: 
                     </h2>
 
                     <br />
-                    springboot, three.js + blender for my prod app!
-                    <br />
-                    blockchains and crypto: currently building my own <a href='https://github.com/tmanzhe/luhchain' target='_blank' rel='noopener noreferrer' className='text-blue-600 hover:underline'> coin!</a>
+                        - implementing springboot, three.js + blender for my prod app!
                     <br />
                     <br />
+                        - trying to get into blockchains and crypto! building my own <a href='https://github.com/tmanzhe/luhchain' target='_blank' rel='noopener noreferrer' className='text-blue-600 hover:underline'> coin!</a>
+                    <br />
+                        - building an nba game predictor w ml and python!
+
                     
                 </div>
 
@@ -83,23 +82,23 @@ export default function Page() {
                 <div className="flex flex-col text-center sm:text-left max-w-lg space-y-4">
                     <h2 className="text-2xl sm:text-4xl font-bold">a little more about me...</h2>
                     <p className="text-sm sm:text-lg">
-                        all you really need to know is that i like having fun 
+                        outside of coding i live by three rules:
                         <br />
                         <br />
-                        my three wonders of life are food, nature, and travelling. i literally cannot live without any of these. check out my gallery for more!
+                        food; nature; travelling. should def check out my gallery 
                     </p>
                     <p className="text-sm sm:text-lg">
-                        some of my hobbies include video prod, gym and some light video gaming
+                        trying to get better at vid prod :O
                     </p>
                     <p className="text-sm sm:text-lg">
                         here are some interesting facts about me: 
                         <br/>
                         <br/>
-                        - i played the piano, trumpet and violin
+                            - i play the piano, trumpet and violin
                         <br/>
-                        - i represented team canada in an internation kf comp event in china 
+                            - i represented team canada in an international kf comp event in china 
                         <br/>
-                        - i cook 
+                            - i cook
                     </p>
                 </div>
             </div>

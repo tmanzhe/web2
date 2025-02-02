@@ -192,7 +192,7 @@ const Page: React.FC = () => {
                     <h2 className="text-4xl sm:text-5xl font-bold mb-12">resume</h2>
                     <div className="w-full aspect-[8.5/11] max-w-4xl mx-auto border border-gray-400 shadow-lg rounded-lg overflow-hidden">
                         <iframe
-                            src="https://drive.google.com/file/d/1qrRhlm1Ac_gTKKz0OW54jMTAnz8Df47X/preview"
+                            src="https://drive.google.com/file/d/1SlGTkCK6_gpEBllVLebPOeyXkxlNZTaI/view?usp=sharing"
                             className="w-full h-full"
                             allow="autoplay"
                         ></iframe>

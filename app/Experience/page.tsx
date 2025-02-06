@@ -15,7 +15,7 @@ const projects: Project[] = [
     {
         title: "MockMate",
         description:
-            "Developed MockMate during UofTHacks 12. MockMate is an AI-assisted application to help users prepare for interviews by simulating real-time scenarios, providing feedback, and tracking progress. Integrated voice recognition and interactive chat features with real-time analytic feedback. Check it out <a href='https://github.com/tmanzhe/mockmate?tab=readme-ov-file' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'> here!</a>",
+            "Developed MockMate during UofTHacks 12. MockMate is an AI-assisted application to help users prepare for interviews by simulating real-time scenarios, providing feedback, and tracking progress. Integrated voice recognition and interactive chat features with real-time analytic feedback. Demo website is now down b/c AWS is expensive :(. Demo live. Check it out <a href='https://github.com/tmanzhe/mockmate?tab=readme-ov-file' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'> here!</a>",
         technologies: ["Next.js", "Next Auth", "PostgreSQL", "OpenAI API", "AWS RDS", "Prisma", "Tailwind"],
         images: ["/demo/mockmatedemo1.png", "/demo/mockmatedemo2.png","/demo/mockmatedemo3.png"],
         date: "January 2025",
@@ -23,16 +23,16 @@ const projects: Project[] = [
     {
         title: "Virtual Mouse",
         description:
-            "Using Python, OpenCV, and MediaPipe, I built a simple gesture-based mouse control system. It was a lot of trial and error, but it works (mostly). Definitely learned a lot in the process. In the future, I'm planning to implement this in 3D environments. Check out my <a href='https://github.com/tmanzhe/virtual_mouse' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'>GitHub repo</a>.",
+            "Using Python, OpenCV, and MediaPipe, I developed a gesture-based virtual mouse system capable of performing left-click, right-click, and live screenshot functionalities through dynamic hand-tracking and gesture detection. got a hands-on introduction to real-time computer vision pipelines, multi-stage image processing, and landmark-based gesture classification. its cool how normalized hand landmarks can be mapped to screen coordinates and translated into user transactions through coordinate transformation matrices, Euclidean distance calculations, and vector-based angle measurements for gesture recognition. you can check it out <a href='https://github.com/tmanzhe/virtual_mouse' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'> here </a>.",
         technologies: ["Python", "OpenCV", "MediaPipe"],
         images: ["/demo/virtual-mouse.png", "/demo/clicker.png"],
         date: "April 2024 - Present",
     },
     {
-        title: "Idkstudy",
+        title: "Sesame",
         description:
-            "Currently developing an all-in-one productivity application featuring a calendar, to-do list, and timer tracker. Built with Next.js and styled using Tailwind CSS, the app integrates 3D interactive elements with Three.js for an engaging user experience. MongoDB and Prisma ORM power secure and efficient backend data management. Check it out <a href='https://github.com/tmanzhe/idkstudy' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'> here</a>.",
-        technologies: ["Next.js", "MongoDB", "Prisma", "Three.js", "Tailwind"],
+            "Currently developing an all-in-one productivity application featuring a calendar, to-do list, and timer tracker w AI integrated into the workflow. Main purpose of this project was to help me make an actual study tool + mess around w threejs and get familiar with springboot. Check it out <a href='https://github.com/tmanzhe/idkstudy' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'> here</a>.",
+        technologies: ["Next.js", "Supabase", "SpringBoot", "Three.js", "PostgresSql", "JWT","OpenAI API"],
         images: ["/assets/underconstruction.jpg"],
         date: "January 2025 - Present",
     },
@@ -192,7 +192,7 @@ const Page: React.FC = () => {
                     <h2 className="text-4xl sm:text-5xl font-bold mb-12">resume</h2>
                     <div className="w-full aspect-[8.5/11] max-w-4xl mx-auto border border-gray-400 shadow-lg rounded-lg overflow-hidden">
                         <iframe
-                            src="https://drive.google.com/file/d/1z0CojBn7wjCbDhtJ9ds4J42ntFItWLn5/view?usp=sharing"
+                            src="/assets/trumanfinalresume.pdf"
                             className="w-full h-full"
                             allow="autoplay"
                         ></iframe>

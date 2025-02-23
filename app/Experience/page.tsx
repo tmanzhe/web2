@@ -21,12 +21,20 @@ const projects: Project[] = [
         date: "January 2025",
     },
     {
+        title: "Minmi",
+        description:
+            "Minimi is a Google Chrome extension that enables users to extract, summarize, and analyze webpage content in real-time using Gemini AI. It streamlines research by allowing users to highlight text and receive structured AI-generated summaries instantly. The backend is built with Spring Boot, handling API interactions and text processing. Check it out <a href='https://github.com/tmanzhe/Minimi' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'> here!</a>",
+        technologies: ["Spring boot", "Gemini 2.0", "Javascript", "Chrome Extension API"],
+        images: ["/demo/minimidemo1.png", "/demo/minimidemo2.png"],
+        date: "Feburary 2025",
+    },
+    {
         title: "Virtual Mouse",
         description:
             "Using Python, OpenCV, and MediaPipe, I developed a gesture-based virtual mouse system capable of performing left-click, right-click, and live screenshot functionalities through dynamic hand-tracking and gesture detection. got a hands-on introduction to real-time computer vision pipelines, multi-stage image processing, and landmark-based gesture classification. its cool how normalized hand landmarks can be mapped to screen coordinates and translated into user transactions through coordinate transformation matrices, Euclidean distance calculations, and vector-based angle measurements for gesture recognition. you can check it out <a href='https://github.com/tmanzhe/virtual_mouse' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'> here </a>.",
         technologies: ["Python", "OpenCV", "MediaPipe"],
         images: ["/demo/virtual-mouse.png", "/demo/clicker.png"],
-        date: "April 2024 - Present",
+        date: "April 2024",
     },
     {
         title: "Sesame",
@@ -34,7 +42,7 @@ const projects: Project[] = [
             "Currently developing an all-in-one productivity application featuring a calendar, to-do list, and timer tracker w AI integrated into the workflow. Main purpose of this project was to help me make an actual study tool + mess around w threejs and get familiar with springboot. Check it out <a href='https://github.com/tmanzhe/idkstudy' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'> here</a>.",
         technologies: ["Next.js", "Supabase", "SpringBoot", "Three.js", "PostgresSql", "JWT","OpenAI API"],
         images: ["/assets/underconstruction.jpg"],
-        date: "January 2025 - Present",
+        date: "January 2025",
     },
     {
         title: "Self-Driving Car Simulation",
@@ -42,7 +50,7 @@ const projects: Project[] = [
             "Honestly, I saw a four hour long tutorial and youtube followed it. Tinkered my way to building a simulation in JavaScript with driving physics and neural networks. It was pretty fun.",
         technologies: ["JavaScript", "HTML", "CSS"],
         images: ["/demo/drive-1.png", "/demo/drive-2.png"],
-        date: "May 2024 - Present",
+        date: "May 2024 ",
     },
     {
         title: "Personal Website",
@@ -192,7 +200,7 @@ const Page: React.FC = () => {
                     <h2 className="text-4xl sm:text-5xl font-bold mb-12">resume</h2>
                     <div className="w-full aspect-[8.5/11] max-w-4xl mx-auto border border-gray-400 shadow-lg rounded-lg overflow-hidden">
                         <iframe
-                            src="/assets/trumanfinalresume.pdf"
+                            src="/assets/tmanupdatedresume.pdf"
                             className="w-full h-full"
                             allow="autoplay"
                         ></iframe>

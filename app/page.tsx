@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import snoopyImage from "@/public/assets/snoopy.png";
 
 export default function Home() {
     const [loaded, setLoaded] = useState(false);
@@ -36,7 +35,7 @@ export default function Home() {
                 {/* Image Column */}
                 <div className="flex-shrink-0 mt-5 sm:mt-0">
                     <Image
-                        src={snoopyImage}
+                        src="/snoopy.png" // ✅ Corrected Path
                         alt="Snoopy"
                         width={300}
                         height={300}

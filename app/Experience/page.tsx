@@ -13,9 +13,18 @@ interface Project {
 
 const projects: Project[] = [
     {
+        title: "tiltq",
+        description:
+            "built tiltq to help league players figure out when they're tilting. it uses riot's api to grab your puuid, fetches your match history, and runs some analysis to see your gameplay patterns. threw in some custom gemini ai prompting to give personalized advice on your mental game. you can check out the live site at <a href='https://tiltq.com' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'>tiltq.com</a>. also made a quick demo video <a href='https://youtu.be/ze2GgKqYrP8' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'>here</a>",
+        technologies: ["Next.js", "Riot Games API", "Gemini AI", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
+        images: ["/demo/tiltq1.png"],
+        date: "March 2025",
+    },
+    
+    {
         title: "MockMate",
         description:
-            "Developed MockMate during UofTHacks 12. MockMate is an AI-assisted application to help users prepare for interviews by simulating real-time scenarios, providing feedback, and tracking progress. Integrated voice recognition and interactive chat features with real-time analytic feedback. Demo website is now down b/c AWS is expensive :(. Demo live. Check it out <a href='https://github.com/tmanzhe/mockmate?tab=readme-ov-file' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'> here!</a>",
+            "made this during uofthacks 12. it's an ai interview prep tool that simulates interviews and gives you feedback in real time. added voice recognition and chat features to make it feel more real. site's down now cause aws costs too much, but you can see what it was about <a href='https://github.com/tmanzhe/mockmate?tab=readme-ov-file' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'>here</a>",
         technologies: ["Next.js", "Next Auth", "PostgreSQL", "OpenAI API", "AWS RDS", "Prisma", "Tailwind"],
         images: ["/demo/mockmatedemo1.png", "/demo/mockmatedemo2.png","/demo/mockmatedemo3.png"],
         date: "January 2025",
@@ -23,7 +32,7 @@ const projects: Project[] = [
     {
         title: "Minmi",
         description:
-            "Minimi is a Google Chrome extension that enables users to extract, summarize, and analyze webpage content in real-time using Gemini AI. It streamlines research by allowing users to highlight text and receive structured AI-generated summaries instantly. The backend is built with Spring Boot, handling API interactions and text processing. Check it out <a href='https://github.com/tmanzhe/Minimi' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'> here!</a>",
+            "made a chrome extension that helps you extract and summarize web content using gemini ai. pretty handy for research - just highlight text and get ai summaries on the spot. backend's in spring boot. check it out <a href='https://github.com/tmanzhe/Minimi' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'>here</a>",
         technologies: ["Spring boot", "Gemini 2.0", "Javascript", "Chrome Extension API"],
         images: ["/demo/minimidemo1.png", "/demo/minimidemo2.png"],
         date: "Feburary 2025",
@@ -31,7 +40,7 @@ const projects: Project[] = [
     {
         title: "Virtual Mouse",
         description:
-            "Using Python, OpenCV, and MediaPipe, I developed a gesture-based virtual mouse system capable of performing left-click, right-click, and live screenshot functionalities through dynamic hand-tracking and gesture detection. got a hands-on introduction to real-time computer vision pipelines, multi-stage image processing, and landmark-based gesture classification. its cool how normalized hand landmarks can be mapped to screen coordinates and translated into user transactions through coordinate transformation matrices, Euclidean distance calculations, and vector-based angle measurements for gesture recognition. you can check it out <a href='https://github.com/tmanzhe/virtual_mouse' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'> here </a>.",
+            "made a virtual mouse system with python and opencv. uses hand tracking to control your cursor and do clicks. learned a bunch about computer vision and gesture recognition. pretty cool how you can map hand movements to screen coordinates. see the code <a href='https://github.com/tmanzhe/virtual_mouse' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'>here</a>",
         technologies: ["Python", "OpenCV", "MediaPipe"],
         images: ["/demo/virtual-mouse.png", "/demo/clicker.png"],
         date: "April 2024",
@@ -39,7 +48,7 @@ const projects: Project[] = [
     {
         title: "Sesame",
         description:
-            "Currently developing an all-in-one productivity application featuring a calendar, to-do list, and timer tracker w AI integrated into the workflow. Main purpose of this project was to help me make an actual study tool + mess around w threejs and get familiar with springboot. Check it out <a href='https://github.com/tmanzhe/idkstudy' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'> here</a>.",
+            "working on an all-in-one study app with calendar, todo list, and time tracking. mainly wanted to make something i'd actually use while learning threejs and spring boot. take a look <a href='https://github.com/tmanzhe/idkstudy' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'>here</a>",
         technologies: ["Next.js", "Supabase", "SpringBoot", "Three.js", "PostgresSql", "JWT","OpenAI API"],
         images: ["/assets/underconstruction.jpg"],
         date: "January 2025",

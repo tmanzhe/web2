@@ -27,29 +27,16 @@ export default function Page() {
                         <span>hello again lol </span>
                     </h1>
                     <div className="mt-3 sm:mt-5 text-sm sm:text-lg">
-                        im currently a full stack dev building as many projects as i can!  
+                        i like building things
                         <br />
                         <br />
-                        i love bringing my impusive thoughts to life. 
+                        currently building an esports platform for a community of 75k+ @demanesports @demanclub
                         <br />
                         <br />
-                        most importantly, i learn so much from each project.
+                        dms r open!
                         <br />
                         <br />
                     </div>
-                    <h2 className="text-3xl sm:text-3xl">
-                        here&apos;s what i&apos;m currently doing: 
-                    </h2>
-
-                    <br />
-                        - implementing springboot, three.js + blender for my prod app!
-                    <br />
-                    <br />
-                        - trying to get into blockchains and crypto! building my own <a href='https://github.com/tmanzhe/luhchain' target='_blank' rel='noopener noreferrer' className='text-blue-600 hover:underline'> coin!</a>
-                    <br />
-                        - building an nba game predictor w ml and python!
-
-                    
                 </div>
 
                 {/* Image Column */}

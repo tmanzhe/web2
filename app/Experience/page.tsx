@@ -15,7 +15,7 @@ const projects: Project[] = [
     {
         title: "tiltq",
         description:
-            "built tiltq to help league players figure out when they're tilting. it uses riot's api to grab your puuid, fetches your match history, and runs some analysis to see your gameplay patterns. threw in some custom gemini ai prompting to give personalized advice on your mental game. you can check out the live site at <a href='https://tiltq.com' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'>tiltq.com</a>. also made a quick demo video <a href='https://youtu.be/ze2GgKqYrP8' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'>here</a>",
+            "built tiltq to help league players compose a tilt enticing response. over 3k+ visits on the first day. it uses riot's api to grab your puuid, fetches your match history, and runs some analysis to see your gameplay patterns. threw in some custom gemini ai prompting to give personalized advice on your mental game. you can check out the live site at <a href='https://tiltq.com' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'>tiltq.com</a>. also made a quick demo video <a href='https://youtu.be/ze2GgKqYrP8' target='_blank' rel='noopener noreferrer' class='text-blue-600 hover:underline'>here</a>",
         technologies: ["Next.js", "Riot Games API", "Gemini AI", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
         images: ["/demo/tiltq1.png"],
         date: "March 2025",
@@ -209,7 +209,7 @@ const Page: React.FC = () => {
                     <h2 className="text-4xl sm:text-5xl font-bold mb-12">resume</h2>
                     <div className="w-full aspect-[8.5/11] max-w-4xl mx-auto border border-gray-400 shadow-lg rounded-lg overflow-hidden">
                         <iframe
-                            src="/assets/tmanupdatedresume.pdf"
+                            src="/assets/tmanGOODRESUME.pdf"
                             className="w-full h-full"
                             allow="autoplay"
                         ></iframe>

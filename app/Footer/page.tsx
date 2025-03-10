@@ -27,7 +27,7 @@ const Page = () => {
                 </li>
                 <li>
                     <a
-                        href="https://drive.google.com/file/d/14DgQ5MbJRanChUoEfexwDUANFxy6Cfuj/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1Ewu6TmMRNe6X66hgB5DkmQjLe2Wbo-kG/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-600 hover:text-gray-300 transition duration-300 ease-in-out"

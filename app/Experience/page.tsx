@@ -143,7 +143,7 @@ const Page: React.FC = () => {
                 <section className="space-y-12 text-center mb-20 mt-12">
                     <h2 className="text-4xl sm:text-5xl font-bold">experience</h2>
                     <div className="flex flex-col items-start gap-6 p-8 transition-shadow duration-300 mx-auto max-w-xl border border-gray-400 shadow-md rounded-lg">
-                        <h3 className="text-2xl font-bold">Mobile Dev Intern @ ITMZ</h3>
+                        <h3 className="text-2xl font-bold"> Software Engineer @ ITMZ</h3>
                         <p className="text-sm text-gray-600">June 2024 - Dec 2024</p>
                         <p className="text-lg mt-2 leading-relaxed text-gray-800">
                             previously building some really cool stuff at{" "}
